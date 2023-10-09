@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //task 1
+        var num=+prompt("enter number");
+        if(num%2==0){
+            console.log(num+" is even")
+        }
+        else{console.log(num+" is odd")}
+        
+
+        //task 2
+        var year=prompt("Enter year");
+        if(year%4==0){
+            console.log(year+" is leap year");
+        }
+        else{
+            console.log(year+" is not leap year")
+        }
+
+        // task3
+        var num1=+prompt("enter first value");
+        var num2=+prompt("enter second number");
+        var num3=+prompt("enter third nuumber");
+        if(num1,num2,num3==0){
+        if(num1>num2 && num1>num3){
+            console.log(num1+" is biggest number among them");
+        }
+        else if(num2>num1 && num2>num3){
+            console.log(num2+" is biggest number among them");
+        }
+        else if(num3>num1 && num3>num2){
+            console.log(num3+" is biggest number among them");
+        }
+        else{console.log("All are equal")};
+    }
+    else{console.log("nagative input")};
+
+    //task4
+    var time=+prompt("enter time:");
+    if(time>=6 && time<=11){
+        console.log("Good Morning");
+    }
+    else if(time>=12 && time<=17){
+        console.log("Good Afternoon");
+    }
+    else if(time>=18 && time<=23){
+        console.log("Good Evening");
+    }
+    else{console.log("Good Night")};
+
+
+    //task 5
+    var a=+prompt("enter amount:");
+    var b=prompt("enter any currency");
+    var c=prompt("enter convert to currency");
+    if(b=="RS")
+    {
+    if(c=="USD")
+    {
+        console.log(a*0.012+" USD");
+    }
+    else if(c=="EURO")
+    {
+        console.log(a*0.011+" EURO");
+    }
+    //  else{console.log("enter correct currency");}
+    }
+   else if(b=="USD"){
+        if(c=="RS"){
+            console.log(a*82+" RS");
+        }
+        else if(c=="EURO")
+        {
+            console.log(a*0.95+" EURO");
+        }
+        //  else 
+        //  { console.log(" enter corret currency");}
+    }  
+    else if(b=="EURO"){
+        if(c=="RS"){
+            console.log(a*87+" RS");
+        }
+        else if(c=="USD"){
+            console.log(a*1.05+" USD");
+        }
+        //  else{console.log("enter correct currency");}
+    }  
+    else{ console.log("Enter only EURO,USD and RS only");}  
+
+//TASK 6
+var col=prompt("enter colour:");
+switch(col){
+    case "red":console.log("Stop");
+    break;
+    case "yellow":console.log("Slow down");
+    break;
+    case "green":console.log("Go");
+    break;
+    default:console.log("Enter a valid color");
+}
+
+
+// task 7
+var mon=prompt("enter month");
+switch(mon){
+    case "january":console.log("winter");
+    break;
+    case "febuary":console.log("winter");
+    break;
+    case "march":console.log("summer");
+    break;
+    case "april":console.log("summer");
+    break;
+    case "may":console.log("summer");
+    break;
+    case "june":console.log("autumn");
+    break;
+    case "july":console.log("autumn");
+    break;
+    case "august":console.log("autumn");
+    break;
+    case "september":console.log("spring");
+    break;
+    case "october":console.log("spring");
+    break;
+    case "november":console.log("spring");
+    break;
+    case "december":console.log("winter");
+    break;
+    default:console.log("enter correct month");
+
+}
+
+//task 8
+var a =+prompt("enter any number from  1 to 4");
+switch(a){
+    case 1:console.log("option 1 selected");
+    break;
+    case 2: console.log("option 2 is selected");
+    break;
+    case 3: console.log("option 3 is selected");
+    break;
+    case 4: console.log("option 4 is selected");
+    break;
+    default:
+        console.log("please enter number in between 1 to 4");
+}
+
+
+
+
+
+    </script>
+</body>
+</html>
