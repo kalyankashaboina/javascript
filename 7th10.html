@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //task 1
+        a=prompt("Please enter your name");
+        alert("Hello, "+ a +"! Welcome to our website.");
+
+        //task2
+        var b=+prompt("Enter First Number:");
+        var operator=prompt("Enter operator");
+        var c=+prompt("Enter Second Number");
+
+        if(operator=="+"){
+            alert(b+c);
+        }
+        else if(operator=="-"){
+            alert(b-c);
+        }
+        else if(operator=="*"){
+            alert(b*c);
+        }
+        else if(operator=="/"){
+            alert(b/c);
+        }  
+        else{
+          alert(  "Invalid Operator,please enter +,-,* or /")
+        }
+        var a=+prompt("Enter First Number:");
+    
+        var b=+prompt("Enter Second Number");
+        sum=a+b;
+
+        console.log(sum)
+        alert("sum is"+sum)
+        
+
+        //task3
+        var age=+prompt(" enter your age:")
+        age>=18?alert("You are eligible"):alert("You are not eligible")
+
+
+        //task4
+        celcius=prompt("enter celcius:");
+        fahrenheit=((celcius*9/5)+32);
+        alert(celcius+"°C is equal to "+fahrenheit+"°F")
+
+       //task 5
+    var num=+prompt("enter number:")
+    num%2==0?alert("even"):alert("odd")
+        
+      //task6
+      password=prompt("Enter Pasword")
+      password==12345?alert("Access granted"):alert("Access denied")
+
+var k=prompt("enter number")
+k%2==0?alert("divisible by 2"):alert("not divisible by 2")
+         </script>
+</body>
+</html>
