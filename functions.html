@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("Printing odd numbers using for loop and control statements")
+        document.write("<br>")
+        
+        for(a=1;a<=10;a++){
+            if(a%2==0){
+                continue;
+            }
+             document. write(a)
+             document.write("<br>")
+        }
+
+    
+        document.write("<br>")
+        
+        //task 2
+        document.write("Printing even numbers using for loop and control statements")
+        document.write("<br>")
+        
+        for(a=1;a<=10;a++){
+            if(a%2==0){
+                document.write(a)
+                document.write("<br>")
+        
+            }
+            
+        
+        }
+        document.write("<br>")
+        
+        // task 3
+        document.write("tables using function with parameters")
+        document.write("<br>")
+        var a=3;
+        function tables(a,i){
+        for(i=1;i<=10;i++){
+            document.write(a+"*"+i+"="+a*i);
+            document.write("<br>")
+        
+        }
+    }
+    tables(5)
+    document.write("<br>")
+
+
+
+
+    // task 4
+    document.write("function without parametrs")
+    document.write("<br>")
+function kal(){
+   var a=40;
+   var b=20;
+   sum=a+b;
+   return sum;
+}
+document.write(kal())
+document.write("<br>")
+
+
+
+
+
+
+//task  5
+
+document.write("sum of two numbers using deafault parameter")
+document.write("<br>")
+function hi(a,b=30){
+    sum=a+b;
+return sum;
+}
+document.write(hi(40))
+document.write("<br>")
+
+// task 6
+document.write(" multipication of two variables using default function")
+document.write("<br>")
+
+function hello(a,b=10){
+    multiple=a*b
+    return multiple;
+}
+document.write((hello(20)))
+document.write("<br>")
+
+
+
+// task 7
+document.write("anonymous function")
+document.write("<br>")
+
+   const hey=  function(a,b,c)  {
+    sum=a+b+c;
+    return sum;
+   } 
+   document.write(hey(3,5,2))
+   document.write("<br>")
+
+
+
+//    task 8
+document.write("self invoking fuction")
+document.write("<br>")
+  
+
+((function are(a,b){
+    mul=a*b;
+document.write(mul);   
+})(3,5))
+
+
+
+
+
+    </script>
+</body>
+</html>
