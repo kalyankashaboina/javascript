@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // task 1
+        for(i=1;i<=7;i++){
+            star="";
+            for(j=1;j<=i;j++){
+                star+="*";
+            }
+           document.write(star);
+           document.write("<br>")
+        }
+
+        // task 2
+        for(i=7;i>=1;i--){
+            star="";
+            for(j=1;j<=i;j++){
+                star+="*";
+            }
+           document.write(star);
+           document.write("<br>")
+        }
+
+        // task 3
+        for(i=1;i<=6;i++){
+              star="";
+              for(j=1;j<=i;j++){
+                star+=j;
+               
+              }
+               document.write(star);
+               document.write("<br>")
+}
+document.write("<br>")
+
+// task 4
+document.write("reverse a string using function")
+document.write("<br>")
+
+
+
+function kal(a,reverse=""){
+for(i=a.length-1;i>=0;i--){
+    reverse+=a[i];  
+}
+document.write(reverse);
+}
+kal("hero")
+document.write("<br>")
+
+
+// task 5
+document.write("finding lenghth of string without using .length keyword")
+document.write("<br>")
+
+var a="string";
+var len=0;
+ for(i=0;a[i]!=undefined;i++){
+  len++;
+  // console.log(a[i])
+ }
+document.write("the length of the string is "+ len)
+document.write("<br>")
+
+
+// task 6
+document.write("check string is palindrome or not")
+document.write("<br>")
+
+function pal(a,reverse=""){
+for(i=a.length-1;i>=0;i--){
+    reverse+=a[i];  
+}
+if(a==reverse){
+    document.write("it is a palindrome string");
+}
+else{
+    document.write("It is not a palndrome string");
+}
+}
+
+pal("hereh")
+
+
+
+ 
+              
+        
+
+
+
+
+    </script>
+</body>
+</html>
